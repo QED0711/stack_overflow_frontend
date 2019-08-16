@@ -28,16 +28,13 @@ body{
 
 
 
-header{
+header, footer{
   text-align: left;
+  color: var(--grey);
 }
 
 a {
   color: var(--orange);
-}
-
-p{
-  color: var(--grey);
 }
 
 .em-grey{

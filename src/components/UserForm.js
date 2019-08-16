@@ -1,6 +1,6 @@
 import React from 'react'
 
-import request from '../js/request'
+import { request } from '../js/request'
 
 const UserForm = ({ setPrediction }) => {
 
