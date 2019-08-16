@@ -10,13 +10,13 @@ import Footer from './components/Footer';
 
 const App = () => {
   const [prediction, setPrediction] = useState("")
-  
+  const [proba, setProba] = useState([])
   return (
     
     <div className="App">
       <Header />
-      <UserForm setPrediction={setPrediction} />
-      <Predictions prediction={prediction}/>
+      <UserForm setPrediction={setPrediction} setProba={setProba} />
+      <Predictions prediction={prediction} proba={proba} />
       <Footer />
     </div>
   );

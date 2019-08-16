@@ -2,13 +2,16 @@ import React from 'react'
 
 import { request } from '../js/request'
 
-const UserForm = ({ setPrediction }) => {
+const UserForm = ({ setPrediction, setProba }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
+        
         const text = document.getElementById("user-form-text").value
         setPrediction("")
-        request(text, setPrediction)
+        setProba([])
+        
+        request(text, setPrediction, setProba)
     }
 
     return (

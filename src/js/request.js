@@ -1,11 +1,12 @@
 
 import $ from 'jquery'
 
-const request = (text, setPrediction) => {
+const request = (text, setPrediction, setProba) => {
     const settings = {
         "async": true,
         "crossDomain": true,
         "url": "https://radiant-tor-56636.herokuapp.com/",
+        // "url": "http://127.0.0.1:5000",
         "method": "POST",
         "headers": {
             "Content-Type": "application/json",
@@ -16,7 +17,9 @@ const request = (text, setPrediction) => {
     }
 
     $.ajax(settings).done(function (response) {
+        console.log(response)
         setPrediction(`${response.prediction}`);
+        setProba(response.proba)
     });
 }
 
