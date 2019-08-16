@@ -5,11 +5,10 @@ import nestedToObject from '../js/nestedToObject';
 const Predictions = ({ prediction, proba }) => {
     
     const percentages = nestedToObject(proba)
-    
+
     return (
         <div>
-            <h2 className="section-header">Predictions:</h2>
-            <hr/>
+            <h2 className="section-header">Prediction:</h2>
             <div>
                 <div className={`tag prediction-${prediction === 'java'}`}>
                     <h1>Java</h1>

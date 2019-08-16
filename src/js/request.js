@@ -17,7 +17,6 @@ const request = (text, setPrediction, setProba) => {
     }
 
     $.ajax(settings).done(function (response) {
-        console.log(response)
         setPrediction(`${response.prediction}`);
         setProba(response.proba)
     });
