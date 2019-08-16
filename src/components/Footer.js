@@ -21,6 +21,10 @@ const Footer = () => {
             <p>
                 To learn more, read our full project report <a href="https://github.com/QED0711/stack_overflow_nlp" target="_blank" rel="noopener noreferrer">here</a>.
             </p>
+
+            <p>
+                The source code for this web app can be found <a href="https://github.com/QED0711/stack_overflow_frontend" target="_blank" rel="noopener noreferrer">here</a>.
+            </p>
             <hr />
             <h3>Project Authors:</h3>
             <p><a href="https://github.com/QED0711" target="_blank" rel="noopener noreferrer">Quinn Dizon</a> | <a href="https://github.com/mzhou356" target="_blank" rel="noopener noreferrer">Mindy Zhou</a></p>
